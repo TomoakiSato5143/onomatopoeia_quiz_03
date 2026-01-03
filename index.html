@@ -136,8 +136,7 @@
             font-size: 1.4rem;
             min-height: 30px;
         }
-        .correct { color: transparent; /* まず、元の絵文字の赤い色を透明にして見えなくします */
-    text-shadow: 0 0 0 #5f6cec; /* その代わりに、青色の「影」を文字に重ねます */; }
+        .correct { color: #5f6cec;  }
         .incorrect { color: #e60033; }
 
         /* 「次の問題へ」ボタン */
@@ -349,7 +348,7 @@
             allBtns.forEach(btn => btn.disabled = true);
 
             if (selectedText === currentQuiz.answer) {
-                resultArea.innerHTML = '<span class="correct">せいかい！⭕️</span>';
+                resultArea.innerHTML = '<span class="correct">せいかい！○</span>';
             } else {
                 resultArea.innerHTML = '<span class="incorrect">ざんねん... せいかいは「' + currentQuiz.answer + '」でした</span>';
             }
