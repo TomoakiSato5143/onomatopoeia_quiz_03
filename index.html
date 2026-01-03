@@ -136,7 +136,8 @@
             font-size: 1.4rem;
             min-height: 30px;
         }
-        .correct { color: #5f6aec; }
+        .correct { color: transparent; /* まず、元の絵文字の赤い色を透明にして見えなくします */
+    text-shadow: 0 0 0 #5f6cec; /* その代わりに、青色の「影」を文字に重ねます */; }
         .incorrect { color: #e60033; }
 
         /* 「次の問題へ」ボタン */
